@@ -1,8 +1,20 @@
 import Button from "../ui/Button";
 import ImageHero from "../../assets/illustration-hero.svg";
-import { NavLink } from "react-router-dom";
+import SignUp from "../ui/SignUp";
+
+import { useState } from "react";
 
 export default function SecHero() {
+  const [isSignUpPopupOpen, setIsSignUpPopupOpen] = useState(false);
+
+  const handleOpenSignUpPopup = () => {
+    setIsSignUpPopupOpen(true);
+  };
+
+  const handleCloseSignUpPopup = () => {
+    setIsSignUpPopupOpen(false);
+  };
+
   return (
     <section className="container my-12">
       <div className="grid grid-cols-5 items-center justify-center gap-36">
@@ -13,14 +25,17 @@ export default function SecHero() {
             anywhere. This flexibility allows you to tailor your learning to
             your own schedule.
           </p>
-          <NavLink to="/">
+
+          <button onClick={handleOpenSignUpPopup}>
             <Button className={"mt-6"} variant="primary">
               Get Started
             </Button>
-          </NavLink>
+          </button>
         </div>
         <img className="col-span-2 w-full" src={ImageHero} alt="" />
       </div>
+
+      {isSignUpPopupOpen && <SignUp onClose={handleCloseSignUpPopup} />}
     </section>
   );
 }
