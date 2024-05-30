@@ -38,7 +38,7 @@ export default function Dropdown({ name }) {
 
       {/* menus dropdown */}
       <div
-        className={`absolute left-0 top-[72px] z-50 w-screen bg-white ${
+        className={`jus absolute left-0 top-[72px] z-50 w-screen bg-white py-10 ${
           showDropdown ? "block" : "hidden"
         }`}
       >
