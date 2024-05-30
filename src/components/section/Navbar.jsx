@@ -1,16 +1,16 @@
 import { NavLink } from "react-router-dom";
 import Dropdown from "../ui/Dropdown";
-
 import Logo from "../../assets/logo.svg";
 import Button from "../ui/Button";
 import SignUp from "../ui/SignUp";
 import LogIn from "../ui/LogIn";
-
 import { useState } from "react";
+import User from "../ui/User";
 
 export default function Navbar() {
   const [isSignUpPopupOpen, setIsSignUpPopupOpen] = useState(false);
   const [isLogInPopupOpen, setIsLogInPopupOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleOpenSignUpPopup = () => {
     setIsSignUpPopupOpen(true);
@@ -26,11 +26,23 @@ export default function Navbar() {
     setIsLogInPopupOpen(false);
   };
 
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+    handleCloseLogInPopup();
+    handleCloseSignUpPopup();
+  };
+
+  const handleSignup = () => {
+    setIsLoggedIn(true);
+    handleCloseLogInPopup();
+    handleCloseSignUpPopup();
+  };
+
   return (
     <nav>
-      <div className=" container fixed grid h-[72px] grid-cols-3 items-center bg-white">
+      <div className="container fixed grid h-[72px] grid-cols-3 items-center bg-white">
         {/* logo */}
-        <NavLink to="/" className={"text-xl font-bold"}>
+        <NavLink to="/" className="text-xl font-bold">
           <img className="h-16" src={Logo} alt="" />
         </NavLink>
 
@@ -57,26 +69,33 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/* action */}
-        <ul className="ml-auto flex ">
-          <li onClick={handleOpenLogInPopup}>
-            <Button
-              className={"border-none text-sm text-black"}
-              variant="white-primary"
-            >
-              Log In
-            </Button>
-          </li>
-          <li onClick={handleOpenSignUpPopup}>
-            <Button className={"text-sm"} variant="primary">
-              Sign Up
-            </Button>
-          </li>
-        </ul>
+        {isLoggedIn ? (
+          <User />
+        ) : (
+          <ul className="ml-auto flex ">
+            <li onClick={handleOpenLogInPopup}>
+              <Button
+                className="border-none text-sm text-black"
+                variant="white-primary"
+              >
+                Log In
+              </Button>
+            </li>
+            <li onClick={handleOpenSignUpPopup}>
+              <Button className="text-sm" variant="primary">
+                Sign Up
+              </Button>
+            </li>
+          </ul>
+        )}
       </div>
 
-      {isSignUpPopupOpen && <SignUp onClose={handleCloseSignUpPopup} />}
-      {isLogInPopupOpen && <LogIn onClose={handleCloseLogInPopup} />}
+      {isSignUpPopupOpen && (
+        <SignUp onClose={handleCloseSignUpPopup} onSignup={handleSignup} />
+      )}
+      {isLogInPopupOpen && (
+        <LogIn onClose={handleCloseLogInPopup} onLogin={handleLogin} />
+      )}
     </nav>
   );
 }
