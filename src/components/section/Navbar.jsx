@@ -40,7 +40,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="container fixed grid h-[72px] grid-cols-3 items-center bg-white">
+      <div className="container fixed z-50 grid h-[72px] grid-cols-3 items-center bg-white">
         {/* logo */}
         <NavLink to="/" className="text-xl font-bold">
           <img className="h-16" src={Logo} alt="" />
