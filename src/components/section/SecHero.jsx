@@ -34,8 +34,8 @@ export default function SecHero() {
             </Button>
           </button>
         </div>
-        <div className="grid justify-center md:col-span-2 md:w-full md:justify-end">
-          <img className="w-72" src={ImageHero} alt="" />
+        <div className="grid justify-center md:col-span-2 md:justify-end">
+          <img className="w-64 md:w-full" src={ImageHero} alt="" />
         </div>
       </div>
 
