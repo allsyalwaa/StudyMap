@@ -8,9 +8,25 @@ export default function Dropdown({ name }) {
     <>
       <button
         onClick={() => setShowDropdown(!showDropdown)}
-        className="relative flex justify-center rounded-lg px-8 py-2 hover:bg-purple-800 hover:text-white"
+        className="relative flex items-center justify-between gap-3 rounded-lg px-8 py-2 hover:bg-purple-800 hover:text-white"
       >
         {name}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 512 512"
+          className={`mt-1 rotate-180 transform ${showDropdown ? "rotate-0 transition-all duration-300" : "rotate-180 transition-all duration-300"}`}
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="48"
+            d="m112 328l144-144l144 144"
+          />
+        </svg>
         <div
           className={`absolute -bottom-2 size-10 translate-y-full rotate-45 bg-gray-200 ${
             showDropdown ? "block" : "hidden"
