@@ -2,15 +2,21 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
 import Button from "./Button";
-
 import { useState } from "react";
 
-export default function LogIn({ onClose }) {
+export default function LogIn({ onClose, onLogin }) {
   const [isOpen, setIsOpen] = useState(true);
 
   const closePopup = () => {
     setIsOpen(false);
     onClose();
+  };
+
+  const handleLogIn = (e) => {
+    e.preventDefault();
+    // Lakukan aksi login di sini (misalnya mengirim data ke server)
+    onLogin();
+    closePopup();
   };
 
   return (
@@ -40,7 +46,7 @@ export default function LogIn({ onClose }) {
             </div>
 
             <div className="mt-2 flex items-center justify-center gap-1">
-              <p className="text-base  text-black">
+              <p className="text-base text-black">
                 Don&apos;t have an account?
               </p>
               <NavLink to="/sign-up" className="text-base underline">
@@ -48,16 +54,18 @@ export default function LogIn({ onClose }) {
               </NavLink>
             </div>
 
-            <form className="mt-6 flex flex-col" action="">
+            <form className="mt-6 flex flex-col" onSubmit={handleLogIn}>
               <input
                 className="mt-4 rounded-lg border-[1.5px] border-black/50 px-5 py-3 placeholder-black/50"
                 type="email"
                 placeholder="Email"
+                required
               />
               <input
-                className="mt-4  rounded-lg border-[1.5px] border-black/50 px-5 py-3 placeholder-black/50"
+                className="mt-4 rounded-lg border-[1.5px] border-black/50 px-5 py-3 placeholder-black/50"
                 type="password"
                 placeholder="Password"
+                required
               />
 
               <div className="mt-2 flex justify-end">
@@ -66,7 +74,11 @@ export default function LogIn({ onClose }) {
                 </NavLink>
               </div>
 
-              <Button variant="primary" className={"mt-8 px-5 py-3"}>
+              <Button
+                type="submit"
+                variant="primary"
+                className={"mt-8 px-5 py-3"}
+              >
                 Log In
               </Button>
             </form>
