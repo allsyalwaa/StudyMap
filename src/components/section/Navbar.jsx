@@ -3,8 +3,29 @@ import Dropdown from "../ui/Dropdown";
 
 import Logo from "../../assets/logo.svg";
 import Button from "../ui/Button";
+import SignUp from "../ui/SignUp";
+import LogIn from "../ui/LogIn";
+
+import { useState } from "react";
 
 export default function Navbar() {
+  const [isSignUpPopupOpen, setIsSignUpPopupOpen] = useState(false);
+  const [isLogInPopupOpen, setIsLogInPopupOpen] = useState(false);
+
+  const handleOpenSignUpPopup = () => {
+    setIsSignUpPopupOpen(true);
+  };
+  const handleOpenLogInPopup = () => {
+    setIsLogInPopupOpen(true);
+  };
+
+  const handleCloseSignUpPopup = () => {
+    setIsSignUpPopupOpen(false);
+  };
+  const handleCloseLogInPopup = () => {
+    setIsLogInPopupOpen(false);
+  };
+
   return (
     <nav>
       <div className=" container fixed grid h-[72px] grid-cols-3 items-center bg-white">
@@ -38,20 +59,24 @@ export default function Navbar() {
 
         {/* action */}
         <ul className="ml-auto flex ">
-          <li>
-            <NavLink to="/">
-              <button className="rounded-lg px-8 py-2 text-base font-medium text-secondary">
-                Log In
-              </button>
-            </NavLink>
+          <li onClick={handleOpenLogInPopup}>
+            <Button
+              className={"border-none text-sm text-black"}
+              variant="white-primary"
+            >
+              Log In
+            </Button>
           </li>
-          <li>
-            <NavLink to="/">
-              <Button variant="primary">Sign Up</Button>
-            </NavLink>
+          <li onClick={handleOpenSignUpPopup}>
+            <Button className={"text-sm"} variant="primary">
+              Sign Up
+            </Button>
           </li>
         </ul>
       </div>
+
+      {isSignUpPopupOpen && <SignUp onClose={handleCloseSignUpPopup} />}
+      {isLogInPopupOpen && <LogIn onClose={handleCloseLogInPopup} />}
     </nav>
   );
 }
