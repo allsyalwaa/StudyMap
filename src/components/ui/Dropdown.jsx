@@ -21,9 +21,9 @@ export default function Dropdown({ name }) {
           <path
             fill="none"
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="48"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="48"
             d="m112 328l144-144l144 144"
           />
         </svg>
