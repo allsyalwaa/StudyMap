@@ -19,7 +19,7 @@ export default function LogIn({ onClose }) {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
           <div className="w-full max-w-2xl rounded-3xl bg-white p-10 shadow-lg">
             <div className="mb-4 flex justify-end">
-              <button onClick={closePopup} className="text-primary">
+              <button onClick={closePopup} className="text-black/50">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="1.3em"
