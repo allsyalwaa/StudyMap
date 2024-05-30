@@ -42,14 +42,14 @@ export default function Navbar() {
             </li>
             <li>
               <NavLink to="/">
-                <button className="rounded-lg px-8 py-2 text-base font-medium text-secondary hover:bg-purple-800 hover:text-white">
+                <button className="rounded-lg px-8 py-2 text-base font-medium text-secondary hover:bg-secondary hover:text-white">
                   About
                 </button>
               </NavLink>
             </li>
             <li>
               <NavLink to="/">
-                <button className="rounded-lg px-8 py-2 text-base font-medium text-secondary hover:bg-purple-800 hover:text-white">
+                <button className="rounded-lg px-8 py-2 text-base font-medium text-secondary hover:bg-secondary hover:text-white">
                   Contact
                 </button>
               </NavLink>
