@@ -4,7 +4,7 @@ import SecCourseRecommendation from "../components/section/SecCourseRecommendati
 export default function CourseContentLayout() {
   return (
     <div className="container my-12 pt-10">
-      <div className="grid grid-cols-2 gap-12">
+      <div className="grid gap-12 md:grid-cols-2">
         <SecCourseContent />
         <SecCourseRecommendation />
       </div>
