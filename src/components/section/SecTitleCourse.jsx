@@ -5,7 +5,7 @@ export default function SecTitleCourse() {
   return (
     <section className="container my-12">
       <div className="grid justify-center">
-        <img className="mx-auto h-60" src={ImageCourse} alt="" />
+        <img className="mx-auto h-32 md:h-60" src={ImageCourse} alt="" />
 
         <h1 className="mt-4 text-center text-3xl font-bold">
           Front-End Developer
