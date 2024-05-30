@@ -10,27 +10,51 @@ export default function Footer() {
         </NavLink>
 
         <div className="mt-5 grid grid-cols-4">
-          <div className="text-base font-medium text-secondary">
-            <h1>Courses</h1>
-            <h1 className="mt-4">About</h1>
-            <h1 className="mt-4">Contact</h1>
+          <div className="flex flex-col text-base font-medium text-secondary">
+            <NavLink to="/">Courses</NavLink>
+            <NavLink to="/" className="mt-4">
+              About
+            </NavLink>
+            <NavLink to="/" className="mt-4">
+              Contact
+            </NavLink>
           </div>
           <div className="grid gap-4">
-            <h1 className="text-base font-bold text-secondary">Courses</h1>
+            <NavLink to="/" className="text-base font-bold text-secondary">
+              Courses
+            </NavLink>
 
-            <h1 className="text-base font-medium text-secondary">Course</h1>
-            <h1 className="text-base font-medium text-secondary">Course</h1>
-            <h1 className="text-base font-medium text-secondary">Course</h1>
-            <h1 className="text-base font-medium text-secondary">Course</h1>
-            <h1 className="text-base font-medium text-secondary">Course</h1>
-            <h1 className="text-base font-medium text-secondary">Course</h1>
+            <NavLink to="/" className="text-base font-medium text-secondary">
+              Course
+            </NavLink>
+            <NavLink to="/" className="text-base font-medium text-secondary">
+              Course
+            </NavLink>
+            <NavLink to="/" className="text-base font-medium text-secondary">
+              Course
+            </NavLink>
+            <NavLink to="/" className="text-base font-medium text-secondary">
+              Course
+            </NavLink>
+            <NavLink to="/" className="text-base font-medium text-secondary">
+              Course
+            </NavLink>
+            <NavLink to="/" className="text-base font-medium text-secondary">
+              Course
+            </NavLink>
+          </div>
+          <div className="flex flex-col text-base font-medium text-secondary">
+            <NavLink to="/" className="text-base font-bold text-secondary">
+              About
+            </NavLink>
+            <NavLink to="/" className="mt-4">
+              Help
+            </NavLink>
           </div>
           <div className="text-base font-medium text-secondary">
-            <h1 className="text-base font-bold text-secondary">About</h1>
-            <h1 className="mt-4">Help</h1>
-          </div>
-          <div className="text-base font-medium text-secondary">
-            <h1 className="text-base font-bold text-secondary">Contact</h1>
+            <NavLink to="/" className="text-base font-bold text-secondary">
+              Contact
+            </NavLink>
             <div className="ml-auto mt-4 flex gap-3">
               <NavLink to="/">
                 <svg
