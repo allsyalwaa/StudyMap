@@ -11,7 +11,7 @@ export default function SecCourseContent() {
       <div className="flex flex-col gap-6">
         <h2 className="text-xl font-medium">Course Content</h2>
 
-        <div className="grid grid-cols-2 items-center text-lg font-medium">
+        <div className="grid grid-cols-2 items-center gap-4 text-lg font-medium">
           <div
             className={`cursor-pointer ${activeTab === "Videos" ? "text-primary" : "text-black"}`}
             onClick={() => setActiveTab("Videos")}
