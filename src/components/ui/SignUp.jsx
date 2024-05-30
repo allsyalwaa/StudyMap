@@ -23,7 +23,7 @@ export default function SignUp({ onClose, onSignup }) {
     <>
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="w-full max-w-2xl rounded-3xl bg-white p-10 shadow-lg">
+          <div className="w-full max-w-sm rounded-3xl bg-white p-10 shadow-lg md:max-w-2xl">
             <div className="mb-2 flex justify-end">
               <button onClick={closePopup} className="text-black/50">
                 <svg
@@ -41,8 +41,10 @@ export default function SignUp({ onClose, onSignup }) {
             </div>
 
             <div className="flex items-center justify-center">
-              <h1 className="mb-3 text-4xl font-bold">Sign up for</h1>
-              <img src={Logo} alt="" />
+              <h1 className="mb-3 text-2xl font-bold md:text-4xl">
+                Sign up for
+              </h1>
+              <img className="w-1/2 md:w-auto" src={Logo} alt="" />
             </div>
 
             <div className="mt-1 flex items-center justify-center gap-1">
