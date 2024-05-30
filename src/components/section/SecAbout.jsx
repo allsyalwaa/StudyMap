@@ -1,7 +1,20 @@
 import ImageAbout from "../../assets/illustration-about.svg";
 import Button from "../ui/Button";
 
+import { useState } from "react";
+import LogIn from "../ui/LogIn";
+
 export default function SecAbout() {
+  const [isLogInPopupOpen, setIsLogInPopupOpen] = useState(false);
+
+  const handleOpenLogInPopup = () => {
+    setIsLogInPopupOpen(true);
+  };
+
+  const handleCloseLogInPopup = () => {
+    setIsLogInPopupOpen(false);
+  };
+
   return (
     <section className="container my-12 pt-10">
       <div className="flex flex-col items-center justify-center">
@@ -13,12 +26,13 @@ export default function SecAbout() {
           community and start your journey toward success in the digital world.
         </p>
       </div>
-      <Button className={"mx-auto mt-8"} variant="primary">
-        Join Us
-      </Button>
+      <button onClick={handleOpenLogInPopup} className={"mx-auto mt-8 flex"}>
+        <Button variant="primary">Join Us</Button>
+      </button>
       <div className="flex justify-center">
         <img className="mt-10 w-1/2" src={ImageAbout} alt="" />
       </div>
+      {isLogInPopupOpen && <LogIn onClose={handleCloseLogInPopup} />}
     </section>
   );
 }
