@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
 import Button from "./Button";
 
 import { useState } from "react";
 
-export default function SignUp() {
+export default function SignUp({ onClose }) {
   const [isOpen, setIsOpen] = useState(true);
 
   const closePopup = () => {
