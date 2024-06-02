@@ -7,7 +7,7 @@ export default function SecCourseContent() {
   const [activeTab, setActiveTab] = useState("Videos");
 
   return (
-    <section>
+    <section className="sticky top-20 h-screen overflow-y-auto">
       <div className="flex flex-col gap-6">
         <h2 className="text-xl font-medium">Course Content</h2>
 
@@ -34,6 +34,14 @@ export default function SecCourseContent() {
 
         {activeTab === "Videos" && (
           <>
+            <VideoCourse />
+            <VideoCourse />
+            <VideoCourse />
+            <VideoCourse />
+            <VideoCourse />
+            <VideoCourse />
+            <VideoCourse />
+            <VideoCourse />
             <VideoCourse />
             <VideoCourse />
             <VideoCourse />
