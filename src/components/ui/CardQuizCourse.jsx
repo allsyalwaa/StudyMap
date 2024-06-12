@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import ImageQuiz from "../../assets/illustration-quiz.svg";
 
-export default function CardQuizCourse({ number }) {
+export default function CardQuizCourse({ number, description }) {
   return (
     <div className=" flex items-center gap-6">
       <div className="relative">
@@ -13,7 +13,7 @@ export default function CardQuizCourse({ number }) {
 
       <div className="flex w-1/3 flex-col">
         <h1 className="break-words text-lg font-medium text-secondary">
-          hfcuerdgbufcbswbdegfytcehgsqvl
+          {description}
         </h1>
       </div>
     </div>
