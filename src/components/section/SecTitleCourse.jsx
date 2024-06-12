@@ -1,5 +1,6 @@
 import Button from "../ui/Button";
 import frontend from "../../assets/frontend.svg";
+import { NavLink } from "react-router-dom";
 
 export default function SecTitleCourse() {
   return (
@@ -10,9 +11,11 @@ export default function SecTitleCourse() {
         <h1 className="mt-4 text-center text-3xl font-bold">
           Front-End Developer
         </h1>
-        <Button className={"mx-auto mt-6"} variant="primary">
-          Get Started
-        </Button>
+        <NavLink to="/video">
+          <Button className={"mx-auto mt-6"} variant="primary">
+            Get Started
+          </Button>
+        </NavLink>
 
         <div className="mt-6 flex items-center justify-center space-x-8 text-black/50">
           <div className="flex flex-col items-center gap-3">
