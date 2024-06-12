@@ -19,42 +19,51 @@ export default function SecVideoCourse() {
         <CardVideoCourse
           image={video2}
           title={"Frontend | Day 2 | Introduction to CSS"}
+          to={"/coming-soon"}
         />
         <CardVideoCourse
           image={video3}
           title={"Frontend | Day 3 | Intro to JavaScript"}
+          to={"/coming-soon"}
         />
         <CardVideoCourse
           image={video4}
           title={"Frontend | Day 4 | JS: Functions & DOM Manipulation"}
+          to={"/coming-soon"}
         />
         <CardVideoCourse
           image={video5}
           title={"Frontend | Day 5 | JS: Event Handling & Forms"}
+          to={"/coming-soon"}
         />
         <CardVideoCourse
           image={video6}
           title={"Frontend | Day 6 | Semantic HTML & Positioned Elements"}
+          to={"/coming-soon"}
         />
         <CardVideoCourse
           image={video7}
           title={"Frontend | Day 7 | Responsive UI & Flexbox"}
+          to={"/coming-soon"}
         />
         <CardVideoCourse
           image={video8}
           title={"Frontend | Day 8 | CSS Grid & Shadows"}
+          to={"/coming-soon"}
         />
         <CardVideoCourse
           image={video9}
           title={
             "Frontend | Day 9 | CSS - Grid Areas, JS Execution Context and Scope Chain"
           }
+          to={"/coming-soon"}
         />
         <CardVideoCourse
           image={video10}
           title={
             "Frontend | Day 10 | Object creation, this object, closures, prototypal inheritance"
           }
+          to={"/coming-soon"}
         />
       </div>
     </section>
