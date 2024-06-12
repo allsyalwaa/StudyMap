@@ -1,11 +1,11 @@
-import ImageCourse from "../../assets/illustration-course.svg";
 import Button from "../ui/Button";
+import frontend from "../../assets/frontend.svg";
 
 export default function SecTitleCourse() {
   return (
     <section className="container my-12">
       <div className="grid justify-center">
-        <img className="mx-auto h-32 md:h-60" src={ImageCourse} alt="" />
+        <img className="mx-auto h-32 md:h-60" src={frontend} alt="" />
 
         <h1 className="mt-4 text-center text-3xl font-bold">
           Front-End Developer
@@ -33,11 +33,10 @@ export default function SecTitleCourse() {
 
         <div className="flex justify-center">
           <p className="mt-4 w-2/3 text-center text-base text-black/50">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in.
+            Front end development covers HTML, CSS, JavaScript, and frameworks
+            like React. Learn responsive design, development tools, and testing
+            techniques. The course emphasizes performance, accessibility, and
+            security, offering hands-on projects and comprehensive learning.
           </p>
         </div>
       </div>
