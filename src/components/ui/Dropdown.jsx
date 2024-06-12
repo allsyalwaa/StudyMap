@@ -53,35 +53,35 @@ export default function Dropdown({ name }) {
           <li>
             <NavLink to="/">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
-                Front-End Developer
+                Back-End Development
               </button>
             </NavLink>
           </li>
           <li>
             <NavLink to="/">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
-                Front-End Developer
+                Full-stack Development
               </button>
             </NavLink>
           </li>
           <li>
             <NavLink to="/">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
-                Front-End Developer
+                UI/UX Design
               </button>
             </NavLink>
           </li>
           <li>
             <NavLink to="/">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
-                Front-End Developer
+                API Development
               </button>
             </NavLink>
           </li>
           <li>
             <NavLink to="/">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
-                Front-End Developer
+                Web Security
               </button>
             </NavLink>
           </li>
