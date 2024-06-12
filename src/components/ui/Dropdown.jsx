@@ -44,65 +44,44 @@ export default function Dropdown({ name }) {
       >
         <ul className="container grid grid-cols-3 text-base">
           <li>
-            <NavLink to="/">
+            <NavLink to="/course">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
                 Front-End Developer
               </button>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/">
+            <NavLink to="/coming-soon">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
                 Back-End Development
               </button>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/">
+            <NavLink to="/coming-soon">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
                 Full-stack Development
               </button>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/">
+            <NavLink to="/coming-soon">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
                 UI/UX Design
               </button>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/">
+            <NavLink to="/coming-soon">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
                 API Development
               </button>
             </NavLink>
           </li>
           <li>
-            <NavLink to="/">
+            <NavLink to="/coming-soon">
               <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
                 Web Security
-              </button>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/">
-              <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
-                Front-End Developer
-              </button>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/">
-              <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
-                Front-End Developer
-              </button>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/">
-              <button className="w-full px-8 py-2 text-secondary hover:bg-secondary hover:text-white">
-                Front-End Developer
               </button>
             </NavLink>
           </li>
