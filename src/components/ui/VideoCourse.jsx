@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import CardVideoCourse from "./CardVideoCourse";
 
 export default function VideoCourse({ image, title }) {
