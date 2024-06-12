@@ -1,12 +1,11 @@
-import ImageVideo from "../../assets/illustration-video.svg";
-
-export default function CardVideoCourse() {
+/* eslint-disable react/prop-types */
+export default function CardVideoCourse({ image, title }) {
   return (
     <div className=" flex items-center gap-6">
-      <img className="h-20" src={ImageVideo} alt="" />
+      <img className="h-20" src={image} alt="" />
       <div className="flex w-1/3 flex-col">
-        <h1 className="break-words text-lg font-medium text-secondary">
-          hfcuerdgbufcbswbdegfytcehgsqvl
+        <h1 className="line-clamp-2 text-ellipsis break-words text-lg font-medium text-secondary">
+          {title}
         </h1>
       </div>
     </div>
