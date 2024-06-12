@@ -6,6 +6,7 @@ import Video from "./pages/Video";
 import Quiz from "./pages/Quiz";
 import Profile from "./pages/Profile";
 import Setting from "./pages/Setting";
+import ComingSoon from "./pages/ComingSoon";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/setting" element={<Setting />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
       </Routes>
     </BrowserRouter>
   );
