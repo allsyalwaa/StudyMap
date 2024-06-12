@@ -11,13 +11,12 @@ export default function Footer() {
 
         <div className="mt-5 grid grid-cols-4">
           <div className="flex flex-col text-base font-medium text-secondary">
-            <NavLink to="/">Courses</NavLink>
-            <NavLink to="/" className="mt-4">
+            <NavLink to="/course">Courses</NavLink>
+            <a href="#about" className="mt-4">
               About
-            </NavLink>
-            <NavLink to="/" className="mt-4">
-              Contact
-            </NavLink>
+            </a>
+
+            <h1 className="mt-4">Contact</h1>
           </div>
           <div className="grid gap-4">
             <NavLink to="/" className="text-base font-bold text-secondary">
