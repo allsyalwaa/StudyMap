@@ -48,46 +48,56 @@ export default function SecCourseContent() {
             <VideoCourse
               image={video1}
               title={"Frontend | Day 1 | Basics of HTML"}
+              to={"/video"}
             />
             <VideoCourse
               image={video2}
               title={"Frontend | Day 2 | Introduction to CSS"}
+              to={"/coming-soon"}
             />
             <VideoCourse
               image={video3}
               title={"Frontend | Day 3 | Intro to JavaScript"}
+              to={"/coming-soon"}
             />
             <VideoCourse
               image={video4}
               title={"Frontend | Day 4 | JS: Functions & DOM Manipulation"}
+              to={"/coming-soon"}
             />
             <VideoCourse
               image={video5}
               title={"Frontend | Day 5 | JS: Event Handling & Forms"}
+              to={"/coming-soon"}
             />
             <VideoCourse
               image={video6}
               title={"Frontend | Day 6 | Semantic HTML & Positioned Elements"}
+              to={"/coming-soon"}
             />
             <VideoCourse
               image={video7}
               title={"Frontend | Day 7 | Responsive UI & Flexbox"}
+              to={"/coming-soon"}
             />
             <VideoCourse
               image={video8}
               title={"Frontend | Day 8 | CSS Grid & Shadows"}
+              to={"/coming-soon"}
             />
             <VideoCourse
               image={video9}
               title={
                 "Frontend | Day 9 | CSS - Grid Areas, JS Execution Context and Scope Chain"
               }
+              to={"/coming-soon"}
             />
             <VideoCourse
               image={video10}
               title={
                 "Frontend | Day 10 | Object creation, this object, closures, prototypal inheritance"
               }
+              to={"/coming-soon"}
             />
           </>
         )}
