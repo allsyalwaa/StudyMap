@@ -22,8 +22,8 @@ export default function User() {
           <div className="grid grid-cols-3 items-center gap-4 px-2">
             <img className="h-16" src={ImageUser} alt="" />
             <div className="col-span-2 flex flex-col">
-              <h1 className="text-xl font-semibold">Username</h1>
-              <p className="text-base text-black/50">emailemail@gmail.com</p>
+              <h1 className="text-xl font-semibold">Zulfiasyalwa</h1>
+              <p className="text-base text-black/50">zulfiasyal@gmail.com</p>
             </div>
           </div>
           <div className="mt-4 w-full border-b-[1px] border-black/50"></div>
