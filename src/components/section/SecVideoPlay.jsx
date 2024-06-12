@@ -52,10 +52,11 @@ export default function SecVideoPlay() {
             developer from Full-stack(Both backend and frontend) to Data
             structures A platform that connects them with a super pumped up
             crowd to learn with and collaborate in projects Mentorship from the
-            tech industry's top tech professionals from companies like Amazon,
-            Microsoft, Google, etc., all of them working to help the students to
-            reach their maximum potential. JOBS. We bring job opportunities,
-            freelancing projects, and internships for the students
+            tech industry&apos;s top tech professionals from companies like
+            Amazon, Microsoft, Google, etc., all of them working to help the
+            students to reach their maximum potential. JOBS. We bring job
+            opportunities, freelancing projects, and internships for the
+            students
           </p>
         </div>
       </div>
