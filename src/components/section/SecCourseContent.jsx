@@ -107,22 +107,27 @@ export default function SecCourseContent() {
             <CardQuizCourse
               number="1"
               description={"Quiz 1 Front-End Development"}
+              to={"/quiz"}
             />
             <CardQuizCourse
               number="2"
               description={"Quiz 2 Front-End Development"}
+              to={"/coming-soon"}
             />
             <CardQuizCourse
               number="3"
               description={"Quiz 3 Front-End Development"}
+              to={"/coming-soon"}
             />
             <CardQuizCourse
               number="4"
               description={"Quiz 4 Front-End Development"}
+              to={"/coming-soon"}
             />
             <CardQuizCourse
               number="5"
               description={"Quiz 5 Front-End Development"}
+              to={"/coming-soon"}
             />
           </>
         )}
