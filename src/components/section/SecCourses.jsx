@@ -13,6 +13,7 @@ export default function SecCourses() {
 
       <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-3">
         <CardCourses
+          to={"/course"}
           image={frontend}
           title={"Front-End Development"}
           description={
@@ -20,6 +21,7 @@ export default function SecCourses() {
           }
         />
         <CardCourses
+          to={"/coming-soon"}
           image={backend}
           title={"Back-End Development"}
           description={
@@ -27,6 +29,7 @@ export default function SecCourses() {
           }
         />
         <CardCourses
+          to={"/coming-soon"}
           image={fullstack}
           title={"Full-Stack Development"}
           description={
@@ -34,6 +37,7 @@ export default function SecCourses() {
           }
         />
         <CardCourses
+          to={"/coming-soon"}
           image={uiux}
           title={"UI/UX Design"}
           description={
@@ -41,6 +45,7 @@ export default function SecCourses() {
           }
         />
         <CardCourses
+          to={"/coming-soon"}
           image={api}
           title={"API Development"}
           description={
@@ -48,6 +53,7 @@ export default function SecCourses() {
           }
         />
         <CardCourses
+          to={"/coming-soon"}
           image={websecurity}
           title={"Web Security"}
           description={
