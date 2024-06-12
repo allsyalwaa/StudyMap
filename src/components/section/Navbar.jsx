@@ -55,7 +55,7 @@ export default function Navbar() {
         <div className="hidden justify-center md:flex">
           <ul className="flex items-center justify-center rounded-lg bg-primary/5">
             <li className="flex items-center gap-1 text-base font-medium text-secondary">
-              <Dropdown name="Course" />
+              <Dropdown name="Courses" />
             </li>
             <li>
               <NavLink to="/">
@@ -115,7 +115,7 @@ export default function Navbar() {
         <div className="fixed inset-0 top-[72px] z-40 flex flex-col items-center bg-white md:hidden">
           <ul className="mt-4 flex flex-col items-center gap-4">
             <li className="flex items-center gap-1 text-base font-medium text-secondary">
-              <Dropdown name="Course" />
+              <Dropdown name="Courses" />
             </li>
             <li>
               <NavLink to="/">
