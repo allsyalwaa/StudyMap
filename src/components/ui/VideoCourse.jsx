@@ -1,9 +1,9 @@
 import CardVideoCourse from "./CardVideoCourse";
 
-export default function VideoCourse() {
+export default function VideoCourse({ image, title }) {
   return (
     <div>
-      <CardVideoCourse />
+      <CardVideoCourse image={image} title={title} />
     </div>
   );
 }
