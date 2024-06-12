@@ -12,7 +12,7 @@ export default function User() {
   return (
     <div className="relative flex items-center justify-end">
       <button onClick={toggleMenu} className="flex items-center gap-8">
-        <h1 className="text-lg font-medium text-secondary">Username</h1>
+        <h1 className="text-lg font-medium text-secondary">zulfiasyalwa</h1>
         <img className="h-10" src={ImageUser} alt="" />
       </button>
 
@@ -22,7 +22,7 @@ export default function User() {
           <div className="grid grid-cols-3 items-center gap-4 px-2">
             <img className="h-16" src={ImageUser} alt="" />
             <div className="col-span-2 flex flex-col">
-              <h1 className="text-xl font-semibold">Zulfiasyalwa</h1>
+              <h1 className="text-xl font-semibold">zulfiasyalwa</h1>
               <p className="text-base text-black/50">zulfiasyal@gmail.com</p>
             </div>
           </div>
