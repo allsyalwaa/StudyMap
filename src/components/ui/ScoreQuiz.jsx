@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Button from "./Button";
 
 export default function ScoreQuiz() {
@@ -11,12 +12,16 @@ export default function ScoreQuiz() {
             <p className="text-center text-4xl font-bold text-black/50">/100</p>
           </div>
           <div className="mx-auto mb-2 flex flex-row gap-4">
-            <Button variant="white-primary" className="mt-6">
-              Back
-            </Button>
-            <Button variant="primary" className="mt-6">
-              Continue
-            </Button>
+            <NavLink to="/course">
+              <Button variant="white-primary" className="mt-6">
+                Back
+              </Button>
+            </NavLink>
+            <NavLink to="/coming-soon">
+              <Button variant="primary" className="mt-6">
+                Continue
+              </Button>
+            </NavLink>
           </div>
         </div>
       </div>
