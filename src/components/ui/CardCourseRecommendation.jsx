@@ -1,15 +1,18 @@
-import ImageCourse from "../../assets/illustration-course.svg";
-
-export default function CardCourseRecommendation() {
+/* eslint-disable react/prop-types */
+export default function CardCourseRecommendation({
+  image,
+  title,
+  description,
+}) {
   return (
     <div className=" flex items-center gap-6">
-      <img className="h-36" src={ImageCourse} alt="" />
-      <div className="flex w-1/3 flex-col gap-3">
-        <h1 className="break-words text-xl font-medium text-secondary">
-          hfcuerdgbufcfytcehgsqvl
+      <img className="h-36" src={image} alt="" />
+      <div className="flex flex-col gap-3">
+        <h1 className="line-clamp-2 break-words text-xl font-medium text-secondary">
+          {title}
         </h1>
-        <p className="break-words text-base font-medium text-black/50">
-          hfcuerdgbufcbhqvlhfcuerdgbufcbswbdehsed...
+        <p className="line-clamp-3 text-ellipsis break-words text-base font-medium text-black/50">
+          {description}
         </p>
       </div>
     </div>
