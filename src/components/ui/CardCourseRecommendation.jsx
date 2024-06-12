@@ -1,11 +1,14 @@
+import { NavLink } from "react-router-dom";
+
 /* eslint-disable react/prop-types */
 export default function CardCourseRecommendation({
   image,
   title,
   description,
+  to,
 }) {
   return (
-    <div className=" flex items-center gap-6">
+    <NavLink to={to} className=" flex items-center gap-6">
       <img className="h-36" src={image} alt="" />
       <div className="flex flex-col gap-3">
         <h1 className="line-clamp-2 break-words text-xl font-medium text-secondary">
@@ -15,6 +18,6 @@ export default function CardCourseRecommendation({
           {description}
         </p>
       </div>
-    </div>
+    </NavLink>
   );
 }
