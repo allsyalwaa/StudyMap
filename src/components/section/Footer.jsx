@@ -23,22 +23,40 @@ export default function Footer() {
               Courses
             </NavLink>
 
-            <NavLink to="/" className="text-base font-medium text-secondary">
+            <NavLink
+              to="/course"
+              className="text-base font-medium text-secondary"
+            >
               Front-End Development
             </NavLink>
-            <NavLink to="/" className="text-base font-medium text-secondary">
+            <NavLink
+              to="/coming-soon"
+              className="text-base font-medium text-secondary"
+            >
               Back-End Development
             </NavLink>
-            <NavLink to="/" className="text-base font-medium text-secondary">
+            <NavLink
+              to="/coming-soon"
+              className="text-base font-medium text-secondary"
+            >
               Full-stack Development
             </NavLink>
-            <NavLink to="/" className="text-base font-medium text-secondary">
+            <NavLink
+              to="/coming-soon"
+              className="text-base font-medium text-secondary"
+            >
               UI/UX Design
             </NavLink>
-            <NavLink to="/" className="text-base font-medium text-secondary">
+            <NavLink
+              to="/coming-soon"
+              className="text-base font-medium text-secondary"
+            >
               API Development
             </NavLink>
-            <NavLink to="/" className="text-base font-medium text-secondary">
+            <NavLink
+              to="/coming-soon"
+              className="text-base font-medium text-secondary"
+            >
               Web Security
             </NavLink>
           </div>
